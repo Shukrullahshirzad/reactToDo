@@ -5,6 +5,7 @@ import Form from "./Form";
 // Import the TodoList component
 import TodoList from "./TodoList";
 import TaskManager from "./TaskManager";
+import styles from "./todoContainer.module.css"; // Import CSS module for styling
 
 // Define the Todo component
 export default function Todo() {
@@ -13,10 +14,10 @@ export default function Todo() {
 
   // Render the Form and TodoList components, passing todos and setTodos as props
   return (
-    <div>
+    <div className={styles.todoContainer}>
       <Form todos={todos} setTodos={setTodos} />
-      <TodoList todos={todos} setTodos={setTodos} />
       <TaskManager todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </div>
   );
 }

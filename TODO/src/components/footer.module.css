@@ -1,9 +1,7 @@
 .footer {
-  background-color: #f1f1f1;
+  background-color: #80ec1a;
   padding: 10px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   margin-top: 0; /* Ensure no margin above Footer */
 }

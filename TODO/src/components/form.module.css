@@ -1,14 +1,14 @@
 .todoform{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     padding: 20px;
-    width: 500px;
+    width: 90%;
     margin: 0 auto ;
     margin-top: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .modrenInput {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: none
     
@@ -17,8 +17,8 @@
     outline: none;
 }
 .modrenButton {
-    background-color: #f0b30d;
-    color: white;
+    background-color: #7bf00d;
+    color: rgb(20, 1, 1);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

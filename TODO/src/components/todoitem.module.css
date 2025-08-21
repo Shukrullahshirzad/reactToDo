@@ -1,5 +1,5 @@
 .item{
-    width: 500px;
+    width:100%;
     color: #311f03;
     font-size: 18px;
     margin: 0 auto;
@@ -7,12 +7,12 @@
 .itemName{
     padding: 10px;
     border-radius: 5px;
-    background-color: #e9f3af;
+    background-color: #a6fc07;
     margin-bottom: 10px;
 }
 .deleteButton{
-    background-color: #949616;
-    color: white;
+    background-color: #f3ef08;
+    color: rgb(7, 0, 0);
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
