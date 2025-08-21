@@ -6,6 +6,7 @@ import Todo from "./components/Todo";
 import Header from "./components/Header";
 // Import the CSS for the App
 import "./App.css";
+import Footer from "./components/Footer";
 
 // Define the App component
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <Todo />
+      <Footer />
     </div>
   );
 }

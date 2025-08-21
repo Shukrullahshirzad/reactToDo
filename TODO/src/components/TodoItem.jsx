@@ -15,10 +15,13 @@ export default function TodoItem({ item, todos, setTodos }) {
   function handleClick(name) {
     console.log("Item clicked:", todos); // Log current todos
     setTodos(
-      todos.map(todo => // Map over todos array
-        todo.name === name // If todo name matches
-          ? { ...todo, completed: !todo.completed } // Toggle completed status
-          : todo // Otherwise, return todo unchanged
+      todos.map(
+        (
+          todo // Map over todos array
+        ) =>
+          todo.name === name // If todo name matches
+            ? { ...todo, completed: !todo.completed } // Toggle completed status
+            : todo // Otherwise, return todo unchanged
       )
     );
   }
@@ -28,8 +31,12 @@ export default function TodoItem({ item, todos, setTodos }) {
 
   // Render the todo item
   return (
-    <div className={styles.item}> {/* Container for the todo item */}
-      <div className={styles.itemName} key={item}> {/* Name container with key */}
+    <div className={styles.item}>
+      {" "}
+      {/* Container for the todo item */}
+      <div className={styles.itemName} key={item}>
+        {" "}
+        {/* Name container with key */}
         <span
           className={className} // Apply completed style if needed
           onClick={() => handleClick(item.name)} // Toggle completed on click

@@ -10,7 +10,8 @@ export default function from({ todos, setTodos }) {
 
   // Function to handle form submission
   function handleSubmit(e) {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
+    // Prevent default form submission
     // Check if the todo name is empty or already exists in the todos array
     if (todo.name.trim() === "" || todos.some((t) => t.name === todo.name)) {
       alert("Please do not enter an empty and repeated item."); // Alert user if invalid
@@ -22,8 +23,12 @@ export default function from({ todos, setTodos }) {
 
   // Render the form
   return (
-    <form className={styles.todoform} onSubmit={handleSubmit}> {/* Form element with submit handler and styling */}
-      <div className={styles.formContainer}> {/* Container for input and button */}
+    <form className={styles.todoform} onSubmit={handleSubmit}>
+      {" "}
+      {/* Form element with submit handler and styling */}
+      <div className={styles.formContainer}>
+        {" "}
+        {/* Container for input and button */}
         <input
           className={styles.modrenInput} // Input styling
           onChange={(e) => setTodo({ name: e.target.value, completed: false })} // Update todo state on input change
@@ -32,7 +37,8 @@ export default function from({ todos, setTodos }) {
           name="todo" // Input name attribute
           placeholder="Add a new todo" // Placeholder text
         />
-        <button className={styles.modrenButton}>Add</button> {/* Button to submit the form */}
+        <button className={styles.modrenButton}>Add</button>{" "}
+        {/* Button to submit the form */}
       </div>
     </form>
   );

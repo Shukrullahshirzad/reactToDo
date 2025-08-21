@@ -7,7 +7,8 @@ import styles from "./TodoList.module.css";
 export default function TodoList({ todos, setTodos }) {
   // Render the list of TodoItem components
   return (
-    <div className={styles.list}> {/* Container for the todo list */}
+    <div className={styles.list}>
+      {/* Container for the todo list */}
       {todos.map((item) => (
         <TodoItem
           key={item.name} // Unique key for each item
