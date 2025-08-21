@@ -1,0 +1,23 @@
+.taskManager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 105px;
+  z-index: -1;
+}
+.complete {
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+  color: #155724;
+  font-weight: bold;
+}
+.incomplete {
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
+  color: #721c24;
+  font-weight: bold;
+}
